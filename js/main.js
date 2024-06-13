@@ -1,13 +1,15 @@
-let nombreProducto = "Sillon"
-let precioUnitario = 100
-let cantidadDeseada = prompt("Ingrese la cantida de sillones que desea")
+let products = [
+    {name: "Tv", precio:731, stock:10},
+    {name: "Sillon", precio:761, stock:10},
+    {name: "Heladera", precio:73, stock:10}
+]
 
-
-function sumarProductos(precioUnitario , cantidadDeseada) {
-    let totalGastado = precioUnitario * cantidadDeseada;
-    return totalGastado;
+for (let index = 0; index < products.length; index++) {
+    console.log(`${products[index]. name} - precio : $${products[index].precio} - stock : ${products[index].stock}`);
 }
 
-let totalDeCompra = sumarProductos(precioUnitario , cantidadDeseada)
-
-console.log("El total gastado es de: $" + totalDeCompra);
+products.pop()
+console.log("-------------------------------------------------");
+for (let index = 0; index < products.length; index++) {
+    console.log(`${products[index]. name} - precio : $${products[index].precio} - stock : ${products[index].stock}`);
+}
